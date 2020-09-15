@@ -19,14 +19,37 @@ _Breathe, meditate, grab a cup of coffee, go for a short walk or do something el
 6. __Every 4 pomodoros, take a longer break__  
 _Once you’ve completed four pomodoros, you can take a longer break. 20 minutes is good. Or 30. Your brain will use this time to assimilate new information and rest before the next round of Pomodoros._  
 
+# Usage
+
+1. (Restart Kernel &) __Run up to the indicated cell__ (6th cell)
+2. __Press play on the widget__ (3th cell output) to start the timer (and start working on your first pomodoro interval!)
+3. __Select your current activity__ before the work interval ends, by selecting a row on the Activities table, don't worry a ringtone will get your attention giving you 30s to spare before each interval change.  
+
+_That's it, more options:_
+   - Add or edit your goals on the Activities sheet 
+   - View each log and overall achievements (>4 registers) 
+   - Configure the lenght of each interval in minutes 
+   - Enable/disable change .wav ringtones 
+   - Import/Export all 3 tables (todo, log, setup) as .csv files 
+   - Skip to next interval 
+   - Delay the interval one minute 
+
 # Current state
 
-Version 0:
+Version 2:
+- PomodoroV2.ipynb
+- Play, pause and stop for the timer
+- Skip to next & add one minute for each deadline
+- Configurable (.wav) sounds play ending 30s before each interval change
+
+Version 1:
+- PomodoroV1.ipynb + pomodoro.py
 - The selected row will be the logged one.
 - Sounds are hardcoded
 - Time setup table are read as seconds
 
 ## Modules or Libraries used
+- ipywidgets, qgrid, jupyterlab  
 - Ringtones [simpleaudio](https://github.com/hamiltron/py-simple-audio)
   - `$ apt install libasound2-dev`
   - v1: configure files
